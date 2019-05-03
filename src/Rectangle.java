@@ -47,11 +47,11 @@ public class Rectangle {
 
         Rectangle rect = new Rectangle(position,width,height);
 
-        if ((rect.position.y >= (other.position.y)-5) && ((rect.position.x) >= ((other.position.x)-5 )) && (((rect.position.x)-5) <= (other.position.x))){
+        if ((((rect.position.y)+5) >= (other.position.y)) && (((rect.position.x)+5) >= (other.position.x )) && ((rect.position.x) <= ((other.position.x)+5))){
             return true;
         }
 
-        if ((((rect.position.y) - 5) <= (other.position.y)) && ((rect.position.x) >= ((other.position.x)-5 )) && (((rect.position.x)-5) <= (other.position.x))){
+        if (((rect.position.y) <= ((other.position.y)+5) && (((rect.position.x)+5) >= (other.position.x)) && ((rect.position.x) <= ((other.position.x)+5)))){
             return true;
         }
 
